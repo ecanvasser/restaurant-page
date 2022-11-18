@@ -1,17 +1,18 @@
 import './style.css';
-import BackgroundImg from './background.jpg';
 import homeClick from './hometab.js';
 import menuClick from './menutab.js';
 import contactClick from './contact.js';
 
 const home = document.querySelector('.home');
-home.addEventListener('click', () => {
+home.addEventListener('click', (e) => {
     homeClick()
+    e.preventDefault();
 });
 
 const menu = document.querySelector('.menu');
-menu.addEventListener('click', () => {
+menu.addEventListener('click', (e) => {
     menuClick()
+    e.preventDefault();
 });
 
 const contact = document.querySelector('.contact');
