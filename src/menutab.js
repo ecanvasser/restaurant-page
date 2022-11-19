@@ -1,3 +1,3 @@
 export default function menuClick() {
-    document.getElementById('content').style.background = '#fb923c';
+    document.body.style.background = '#fb923c';
 }

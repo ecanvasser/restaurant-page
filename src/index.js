@@ -5,8 +5,8 @@ import contactClick from './contact.js';
 
 const home = document.querySelector('.home');
 home.addEventListener('click', (e) => {
-    homeClick()
-    e.preventDefault();
+    homePage();
+    e.preventDefault()
 });
 
 const menu = document.querySelector('.menu');
