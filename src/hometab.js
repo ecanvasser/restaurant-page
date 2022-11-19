@@ -1,7 +1,11 @@
 import BackgroundImg from './background.jpg';
 
 export default function homeClick() {
-    document.getElementById('content').style.backgroundImage = "url(./0510a935b52c8f668c51.jpg)";
+    const bi = new Image();
+    bi.src = BackgroundImg;
+    let bImage = bi.src.match(/[^/]*$/g)[0];
+
+    document.getElementById('content').style.backgroundImage = `url(./${bImage})`;
     document.getElementById('content').style.backgroundSize = 'cover';
     document.getElementById('content').style.backgroundPosition = 'center';
 }
