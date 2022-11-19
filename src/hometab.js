@@ -19,7 +19,17 @@ const Homepage = () => {
         content.appendChild(document.createElement('header')).appendChild(document.createElement('h1'));
         document.getElementsByTagName('h1')[0].innerHTML = `Big Fred's BBQ`;
         
-        const header = document.getElementsByTagName('header');
+        const header = document.getElementsByTagName('header')[0];
+        header.appendChild(document.createElement('nav'));
+
+        const linkNames = ['Home', 'Menu', 'Contact'];
+        const nav = document.getElementsByTagName('nav')[0];
+        for (let i = 0; i < linkNames.length; i++) {
+            let newLink = nav.appendChild(document.createElement('a'));
+            newLink.innerHTML = linkNames[i];
+            newLink.setAttribute('class', linkNames[i].toLowerCase());
+            newLink.setAttribute('href', '');
+        }
     }
 
     const buildPage = () => {
