@@ -6,6 +6,42 @@ body {
 #content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 230px;
+}
+
+.maincopy {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 30px;
+    border-radius: 20px;
+}
+
+.maincopy > h1 {
+    color: white;
+    font-size: 40px;
+}
+
+.maincopy > p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.maincopy > img {
+    border-radius: 50%;
+    margin: 50px 0;
+}
+
+.homeDivider {
+    width: 30%;
+    height: 1px;
+    background-color: white;
+    margin: 30px 0;
 }
 
 header {
@@ -17,11 +53,13 @@ header {
     background-color: black;
     color: white;
     row-gap: 15px;
-    padding: 2rem 0;
+    padding: 3rem 0;
+    width: 100%;
 }
 
 h1 {
     margin: 0;
+    font-size: 50px;
 }
 
 nav {

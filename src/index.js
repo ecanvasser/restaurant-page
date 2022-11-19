@@ -8,7 +8,8 @@ initialLoad.buildPage();
 
 const home = document.querySelector('.home');
 home.addEventListener('click', (e) => {
-    alert('test');
+    const homeBuilder = Homepage();
+    homeBuilder.setBackground();
     e.preventDefault()
 });
 
