@@ -60,10 +60,18 @@ const Homepage = () => {
         mainCopy.children[4].innerHTML = `Swing by to dine-in or call-in for take out`;
     }
 
+    const footer = () => {
+        const content = document.getElementById('content');
+        content.insertAdjacentElement('beforeend', document.createElement('footer'))
+
+        content.children[2].innerHTML = 'Designed by Eddie Canvasser';
+    }
+
     const buildPage = () => {
         setBackground();
         header(); 
-        mainContent(); 
+        mainContent();
+        footer(); 
     }
 
     return {bImage, buildPage}
