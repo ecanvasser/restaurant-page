@@ -1,11 +1,15 @@
 import './style.css';
-import homeClick from './hometab.js';
+import { Homepage } from './hometab.js';
 import menuClick from './menutab.js';
 import contactClick from './contact.js';
 
+const initialLoad = Homepage();
+initialLoad.buildPage();
+
 const home = document.querySelector('.home');
 home.addEventListener('click', (e) => {
-    homePage();
+    const homeBuilder = Homepage();
+    homeBuilder.buildPage();
     e.preventDefault()
 });
 
