@@ -67,11 +67,13 @@ body {
     color: white;
     font-size: 20px;
     text-align: center;
+    width: 85%;
 }
 
 .maincopy > img {
     border-radius: 50%;
     margin: 50px 0;
+    width: 400px;
 }
 
 .homeDivider {
