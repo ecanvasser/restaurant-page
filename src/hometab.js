@@ -1,5 +1,5 @@
-import BackgroundImg from './background.jpg';
-import GrillThumbnail from './maincopy.jpg';
+import BackgroundImg from './img/background.jpg';
+import GrillThumbnail from './img/maincopy.jpg';
 export {Homepage};
 
 const Homepage = () => {

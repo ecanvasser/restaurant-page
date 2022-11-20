@@ -1,6 +1,6 @@
 import './style.css';
 import { Homepage } from './hometab.js';
-import menuClick from './menutab.js';
+import { Menupage } from './menutab.js';
 import contactClick from './contact.js';
 
 const initialLoad = Homepage();
@@ -15,7 +15,8 @@ home.addEventListener('click', (e) => {
 
 const menu = document.querySelector('.menu');
 menu.addEventListener('click', (e) => {
-    menuClick()
+    const menuBuilder = Menupage()
+    menuBuilder.buildMenu();
     e.preventDefault();
 });
 
