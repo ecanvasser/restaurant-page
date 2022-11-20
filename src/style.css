@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'Arb';
+    src: url('./Arb.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Balt';
+    src: url('./Balt.ttf');
+}
+
 body {
     margin: 0;
     height: 100vh;
@@ -19,6 +31,7 @@ body {
 
 .menutile > h3 {
     margin: 0;
+    font-family: 'Arb';
 }
 
 .menutile {
@@ -46,6 +59,7 @@ body {
 .menutile > p {
     width: 75%;
     text-align: center;
+    font-family: 'Balt';
 }
 
 .maincopy {
@@ -61,13 +75,15 @@ body {
 .maincopy > h1 {
     color: white;
     font-size: 40px;
+    font-family: 'Arb';
 }
 
 .maincopy > p {
     color: white;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
     width: 85%;
+    font-family: 'Balt';
 }
 
 .maincopy > img {
@@ -105,7 +121,8 @@ body {
 
 .phone, .email {
     color: white;
-    font-size: 20px;
+    font-size: 25px;
+    font-family: 'Balt';
 }
 
 .email {
@@ -129,6 +146,7 @@ header {
 h1 {
     margin: 0;
     font-size: 50px;
+    font-family: 'Arb';
 }
 
 nav {
@@ -139,7 +157,8 @@ nav {
 nav > a {
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
+    font-family: 'Balt';
 }
 
 footer {
@@ -150,5 +169,6 @@ footer {
     justify-content: center;
     width: 100%;
     color: white;
-    font-size: 15px;
+    font-size: 17px;
+    font-family: 'Balt';
 }
