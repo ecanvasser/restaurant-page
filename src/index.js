@@ -1,7 +1,7 @@
 import './style.css';
 import { Homepage } from './hometab.js';
 import { Menupage } from './menutab.js';
-import contactClick from './contact.js';
+import { Contactpage } from './contact.js';
 
 const initialLoad = Homepage();
 initialLoad.buildPage();
@@ -21,6 +21,8 @@ menu.addEventListener('click', (e) => {
 });
 
 const contact = document.querySelector('.contact');
-contact.addEventListener('click' , () => {
-    contactClick()
+contact.addEventListener('click' , (e) => {
+    const contactBuilder = Contactpage();
+    contactBuilder.buildContact();
+    e.preventDefault();
 });
